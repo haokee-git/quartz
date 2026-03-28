@@ -1,3 +1,56 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+@font-face {
+  font-family: "PingFang SC";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://1816033108.v.123pan.cn/1816033108/cdn/PingFangSCRegular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "PingFang SC";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://1816033108.v.123pan.cn/1816033108/cdn/PingFangSCMedium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Maple Mono";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://1816033108.v.123pan.cn/1816033108/cdn/MapleMono.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Maple Mono";
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://1816033108.v.123pan.cn/1816033108/cdn/MapleMonoItalic.woff2") format("woff2");
+}
+
+:root {
+  --bodyFont: "PingFang SC", sans-serif !important;
+  --headerFont: "PingFang SC", sans-serif !important;
+  --codeFont: "Maple Mono", "PingFang SC", monospace !important;
+}
+
+.darkmode {
+  display: none;
+}
+
+.shiki span[style*="#689f38"],
+.shiki span[style*="#3949b2"],
+.shiki span[style*="#00897b"] {
+  font-style: italic !important;
+  font-family: "Maple Mono", "PingFang SC", monospace !important;
+}
+
+.explorer {
+  font-weight: 400 !important;
+}
+
+.shiki span {
+  font-style: var(--shiki-light-font-style, normal) !important;
+}
