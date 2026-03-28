@@ -31,29 +31,13 @@
 }
 
 :root {
-  --bodyFont: "PingFang SC", sans-serif !important;
-  --headerFont: "PingFang SC", sans-serif !important;
+  --bodyFont: "Anthropic Serif", Georgia, "Times New Roman", serif !important;
+  --headerFont: "Anthropic Serif", Georgia, "Times New Roman", serif !important;
   --codeFont: "Maple Mono", "PingFang SC", monospace !important;
-  --serifFont: "Anthropic Serif", Georgia, "Times New Roman", serif;
 }
 
-// Article body text uses serif font (matching Claude.ai aesthetic)
-article {
-  font-family: var(--serifFont);
-  line-height: 1.75rem;
-
-  p, li, td, blockquote, .math {
-    font-family: var(--serifFont);
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--serifFont);
-  }
-
-  // Keep code font unchanged
-  code, pre, kbd, samp {
-    font-family: var(--codeFont);
-  }
+body {
+  font-size: 17px;
 }
 
 .darkmode {
