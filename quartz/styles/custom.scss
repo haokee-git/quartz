@@ -3,6 +3,22 @@
 // put your custom CSS here!
 
 @font-face {
+  font-family: "Anthropic Serif";
+  src: url("https://1816033108.v.123pan.cn/1816033108/cdn/AnthropicSerif.woff2") format("woff2");
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Anthropic Serif";
+  src: url("https://1816033108.v.123pan.cn/1816033108/cdn/AnthropicSerifItalic.woff2") format("woff2");
+  font-weight: 300 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "PingFang SC";
   font-weight: 400;
   font-style: normal;
