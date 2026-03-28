@@ -37,15 +37,15 @@
 }
 
 body {
-  font-size: 17px;
+  font-size: 17px !important;
 }
 
 .katex, .math {
-  font-size: 0.9em;
+  font-size: 1em !important;
 }
 
 .darkmode {
-  display: none;
+  display: none !important;
 }
 
 .shiki span[style*="#689f38"],
