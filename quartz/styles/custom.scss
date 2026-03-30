@@ -72,6 +72,10 @@
 
 .explorer {
   font-weight: 400 !important;
+
+  ul.content li a {
+    font-size: 0.85rem !important;
+  }
 }
 
 .shiki span {
