@@ -19,17 +19,19 @@
 }
 
 @font-face {
-  font-family: "PingFang SC";
+  font-family: "Noto Serif CJK SC";
   font-weight: 400;
   font-style: normal;
-  src: url("https://1816033108.v.123pan.cn/1816033108/cdn/PingFangSCRegular.otf") format("opentype");
+  src: url("https://1816033108.v.123pan.cn/1816033108/cdn/NotoSerifCJKsc-Regular.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "PingFang SC";
-  font-weight: 700;
+  font-family: "Noto Serif CJK SC";
+  font-weight: 600;
   font-style: normal;
-  src: url("https://1816033108.v.123pan.cn/1816033108/cdn/PingFangSCMedium.otf") format("opentype");
+  src: url("https://1816033108.v.123pan.cn/1816033108/cdn/NotoSerifCJKsc-Regular.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
@@ -47,13 +49,9 @@
 }
 
 :root {
-  --bodyFont: "Anthropic Serif", Georgia, "Times New Roman", serif !important;
-  --headerFont: "Anthropic Serif", Georgia, "Times New Roman", serif !important;
-  --codeFont: "Maple Mono", "PingFang SC", monospace !important;
-}
-
-body {
-  font-size: 17px !important;
+  --bodyFont: "Anthropic Serif", "Noto Serif CJK SC", serif !important;
+  --headerFont: "Anthropic Serif", "Noto Serif CJK SC", serif !important;
+  --codeFont: "Maple Mono", "Noto Serif CJK SC", monospace !important;
 }
 
 .katex, .math {
@@ -68,7 +66,7 @@ body {
 .shiki span[style*="#3949b2"],
 .shiki span[style*="#00897b"] {
   font-style: italic !important;
-  font-family: "Maple Mono", "PingFang SC", monospace !important;
+  font-family: "Maple Mono", "Noto Serif CJK SC", monospace !important;
 }
 
 .explorer {
