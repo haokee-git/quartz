@@ -94,13 +94,13 @@ article {
     padding-left: 0.65em;
 
     &::before {
-      content: " ";
-      display: inline-block;
+      content: "";
       position: absolute;
       left: 0;
-      top: 4px;
+      top: 50%;
+      transform: translateY(-50%);
       width: 3px;
-      height: calc(1.2em - 8px);
+      height: 0.75em;
       border-radius: 2px;
     }
   }
