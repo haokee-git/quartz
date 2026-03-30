@@ -73,8 +73,13 @@
 .explorer {
   font-weight: 400 !important;
 
+  .folder-container div > a,
+  .folder-container div > button span {
+    font-size: 1rem !important;
+  }
+
   ul.content li a {
-    font-size: 0.85rem !important;
+    font-size: 0.9rem !important;
   }
 }
 
