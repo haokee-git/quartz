@@ -84,26 +84,18 @@ article {
   h1, h2, h3, h4, h5, h6 {
     font-family: "Anthropic Serif", "Noto Serif CJK SC", serif;
     font-weight: 700;
-    position: relative;
     padding-left: 0.65em;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0.1em;
-      width: 3px;
-      height: 0.85em;
-      border-radius: 2px;
-    }
+    background-repeat: no-repeat;
+    background-size: 3px 0.8em;
+    background-position: left center;
   }
 
-  h1::before { background: linear-gradient(#dd2c38, #de7417); }
-  h2::before { background: linear-gradient(#de7417, #c09c0c); }
-  h3::before { background: linear-gradient(#c09c0c, #3da75c); }
-  h4::before { background: linear-gradient(#3da75c, #2196b5); }
-  h5::before { background: #2196b5; }
-  h6::before { background: #7a43b5; }
+  h1 { background-image: linear-gradient(#dd2c38, #de7417); }
+  h2 { background-image: linear-gradient(#de7417, #c09c0c); }
+  h3 { background-image: linear-gradient(#c09c0c, #3da75c); }
+  h4 { background-image: linear-gradient(#3da75c, #2196b5); }
+  h5 { background-image: linear-gradient(#2196b5, #2196b5); }
+  h6 { background-image: linear-gradient(#7a43b5, #7a43b5); }
 }
 
 // ── Alternative checkboxes ─────────────────────────────────────────────────
