@@ -53,6 +53,7 @@
   --headerFont: "Anthropic Serif", "Noto Serif CJK SC", serif !important;
   --codeFont: "Maple Mono", "Noto Serif CJK SC", monospace !important;
   --highlight: rgba(217, 119, 87, 0.2);
+  --light: hsl(48, 33.3%, 97.1%);
 }
 
 .katex, .math {
@@ -79,8 +80,73 @@
   }
 
   ul.content li a {
-    font-size: 0.9rem !important;
+    font-size: 0.95rem !important;
   }
+}
+
+// ── Heading indicators (colored left-bar) ──────────────────────────────────
+article {
+  h1, h2, h3, h4, h5, h6 {
+    position: relative;
+    padding-left: 0.65em;
+
+    &::before {
+      content: " ";
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 3px;
+      height: calc(1.2em - 8px);
+      border-radius: 2px;
+    }
+  }
+
+  h1::before { background: linear-gradient(#dd2c38, #de7417); }
+  h2::before { background: linear-gradient(#de7417, #c09c0c); }
+  h3::before { background: linear-gradient(#c09c0c, #3da75c); }
+  h4::before { background: linear-gradient(#3da75c, #2196b5); }
+  h5::before { background: #2196b5; }
+  h6::before { background: #7a43b5; }
+}
+
+// ── Alternative checkboxes ─────────────────────────────────────────────────
+li[data-task] {
+  list-style: none !important;
+  margin-left: -1.25em;
+
+  &::before {
+    display: inline-block;
+    width: 1.25em;
+    text-align: center;
+    font-style: normal;
+  }
+}
+
+li[data-task="/"]::before  { content: "🔄"; }
+li[data-task="-"]::before  { content: "🚫"; }
+li[data-task=">"]::before  { content: "📅"; }
+li[data-task="<"]::before  { content: "📅"; }
+li[data-task="!"]::before  { content: "❗"; }
+li[data-task="?"]::before  { content: "❓"; }
+li[data-task="i"]::before  { content: "ℹ️"; }
+li[data-task="S"]::before  { content: "💲"; }
+li[data-task="*"]::before  { content: "⭐"; }
+li[data-task="b"]::before  { content: "🔖"; }
+li[data-task='"']::before  { content: "💬"; }
+li[data-task="n"]::before  { content: "📝"; }
+li[data-task="l"]::before  { content: "📍"; }
+li[data-task="I"]::before  { content: "💡"; }
+li[data-task="p"]::before  { content: "👍"; }
+li[data-task="c"]::before  { content: "👎"; }
+li[data-task="u"]::before  { content: "📈"; }
+li[data-task="d"]::before  { content: "📉"; }
+
+// ── Fix quote callout title color ──────────────────────────────────────────
+.callout[data-callout="quote"] {
+  --color: var(--gray);
+  --border: var(--lightgray);
+  --bg: var(--light);
 }
 
 .shiki span {
