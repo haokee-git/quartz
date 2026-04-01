@@ -67,13 +67,16 @@ body {
 .sidebar.left::before {
   content: "";
   display: block;
-  width: 100%;
+  width: 75%;
   aspect-ratio: 1 / 1;
   background-image: url("/static/avatar.png");
   background-size: cover;
   background-position: center top;
   border-radius: 8px;
   flex-shrink: 0;
+  margin-top: calc(-6rem + 1.5rem);
+  margin-left: auto;
+  margin-right: auto;
 
   @media all and (max-width: 800px) {
     display: none;
