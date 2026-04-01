@@ -3,7 +3,7 @@
   "type": "light",
   "colors": {
     "editor.background": "#ffffff",
-    "editor.foreground": "#383a42"
+    "editor.foreground": "#1565ca"
   },
   "tokenColors": [
     {
@@ -12,7 +12,7 @@
     },
     {
       "scope": ["punctuation"],
-      "settings": { "foreground": "#383a42" }
+      "settings": { "foreground": "#9e9d24" }
     },
     {
       "scope": ["keyword", "storage.type", "storage.modifier"],
