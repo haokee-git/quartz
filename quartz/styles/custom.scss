@@ -91,7 +91,9 @@ body {
   display: none !important;
 }
 
-.shiki span[style*="font-style:italic"] {
+.shiki span[style*="#3949B2"],
+.shiki span[style*="#00897B"],
+.shiki span[style*="#689F38"] {
   font-style: italic !important;
   font-family: "Maple Mono", "Noto Serif CJK SC", monospace !important;
 }
