@@ -63,6 +63,26 @@ body {
   background-color: hsl(48 33.3% 97.1%) !important;
 }
 
+// ── Scrollbar ──────────────────────────────────────────────────────────────
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d97757 hsl(48 33.3% 97.1%);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(48 33.3% 97.1%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d97757;
+  border-radius: 3px;
+}
+
 // ── Avatar above page title ────────────────────────────────────────────────
 .sidebar.left::before {
   content: "";
@@ -135,8 +155,8 @@ article {
   h2::before { background: linear-gradient(#de7417, #c09c0c); }
   h3::before { background: linear-gradient(#c09c0c, #3da75c); }
   h4::before { background: linear-gradient(#3da75c, #2196b5); }
-  h5::before { background: linear-gradient(#2196b5, #2196b5); }
-  h6::before { background: linear-gradient(#7a43b5, #7a43b5); }
+  h5::before { background: linear-gradient(#2196b5, #7a43b5); }
+  h6::before { background: linear-gradient(#7a43b5, #dd2c38); }
 }
 
 // ── Alternative checkboxes ─────────────────────────────────────────────────
