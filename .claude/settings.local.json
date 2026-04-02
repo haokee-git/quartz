@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:claude.ai)",
-      "WebFetch(domain:note.haokee.org)"
+      "WebFetch(domain:note.haokee.org)",
+      "Bash(find D:/quartz/node_modules -name *.js -path *task*)",
+      "Bash",
+      "WebSearch"
     ]
   }
 }
